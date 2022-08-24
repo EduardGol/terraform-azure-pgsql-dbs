@@ -48,6 +48,7 @@ variable "charset" {
 
 variable "name_sn" {
   type = string
+  default = "pgsql_sn"
 }
 
 variable "vnet_name" {
@@ -70,9 +71,4 @@ variable "pgsql_private_dns_zone_vn_link_name" {
 
 variable "vnet_id" {
   type = string
-}
-
-variable "name_sn" {
-  type = string
-  default = "pgsql_sn"
 }
