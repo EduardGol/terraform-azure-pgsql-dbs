@@ -60,12 +60,19 @@ variable "address_prefixes_sn" {
 
 variable "pgsql_private_dns_zone_name" {
   type = string
+  default = "pgsq_private_dns_zone"
 }
 
 variable "pgsql_private_dns_zone_vn_link_name" {
   type = string
+  default = "pgsql_private_dns_zone_vn_link"
 }
 
 variable "vnet_id" {
   type = string
+}
+
+variable "name_sn" {
+  type = string
+  default = "pgsql_sn"
 }
