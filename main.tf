@@ -44,8 +44,7 @@ resource "azurerm_postgresql_flexible_server" "main" {
   storage_mb = var.storage_size
 
   sku_name   = var.sku_name
-  depends_on = var.azurerm_private_dns_zone_virtual_network_link
-
+  depends_on = [var.azurerm_private_dns_zone_virtual_network_link]
 }
 
 ## ------ Create Postgresl Database ------ ##
