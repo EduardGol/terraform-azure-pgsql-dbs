@@ -61,7 +61,7 @@ variable "address_prefixes_sn" {
 
 variable "pgsql_private_dns_zone_name" {
   type = string
-  default = "pgsql.azure.com"
+  default = "postgres.database.azure.com"
 }
 
 variable "pgsql_private_dns_zone_vn_link_name" {
