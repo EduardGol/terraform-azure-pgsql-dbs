@@ -66,7 +66,7 @@ variable "pgsql_private_dns_zone_name" {
 
 variable "pgsql_private_dns_zone_vn_link_name" {
   type = string
-  default = "pgsql_private_dns_zone_vn_link"
+  default = "pgsql-private-dns-zone-vn-link"
 }
 
 variable "vnet_id" {
