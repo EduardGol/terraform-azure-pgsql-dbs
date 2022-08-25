@@ -80,3 +80,7 @@ variable "private_dns_zone_id" {
 variable "subnet_id" {
   type = string
 }
+
+variable "azurerm_private_dns_zone_virtual_network_link" {
+  type = list
+}
