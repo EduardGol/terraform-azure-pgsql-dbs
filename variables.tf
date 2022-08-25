@@ -46,29 +46,37 @@ variable "charset" {
   default = "utf8"
 }
 
-variable "name_sn" {
+# variable "name_sn" {
+#   type = string
+#   default = "pgsql_sn"
+# }
+
+# variable "vnet_name" {
+#   type = string
+# }
+
+# variable "address_prefixes_sn" {
+#   type = list(string)
+# }
+
+# variable "pgsql_private_dns_zone_name" {
+#   type = string
+#   default = "postgres.database.azure.com"
+# }
+
+# variable "pgsql_private_dns_zone_vn_link_name" {
+#   type = string
+#   default = "pgsql-private-dns-zone-vn-link"
+# }
+
+# variable "vnet_id" {
+#   type = string
+# }
+
+variable "private_dns_zone_id" {
   type = string
-  default = "pgsql_sn"
 }
 
-variable "vnet_name" {
-  type = string
-}
-
-variable "address_prefixes_sn" {
-  type = list(string)
-}
-
-variable "pgsql_private_dns_zone_name" {
-  type = string
-  default = "postgres.database.azure.com"
-}
-
-variable "pgsql_private_dns_zone_vn_link_name" {
-  type = string
-  default = "pgsql-private-dns-zone-vn-link"
-}
-
-variable "vnet_id" {
+variable "subnet_id" {
   type = string
 }
