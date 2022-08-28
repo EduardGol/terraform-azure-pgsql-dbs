@@ -61,7 +61,7 @@ variable "pgsql_subnet_prefixe" {
 
 variable "pgsql_private_dns_zone_name" {
   type = string
-  default = "postgres.database.azure.com"
+  default = "main.postgres.database.azure.com"
 }
 
 variable "pgsql_private_dns_zone_vn_link_name" {
