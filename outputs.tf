@@ -34,11 +34,11 @@ output "azurerm_postgresql_flexible_server_id"{
 }
 output "azurerm_postgresql_flexible_server_database_name"{
     description = "The name of the newly created postgresql database"
-    value       = azurerm_postgresql_flexible_server_database.main.name
+    value       = azurerm_postgresql_flexible_server_database.main.*.name
 
 }
 output "azurerm_postgresql_flexible_server_database_id"{
     description = "The id of the newly created postgresql database"
-    value       = azurerm_postgresql_flexible_server_database.main.id
+    value       = azurerm_postgresql_flexible_server_database.main.*.id
 
 }
